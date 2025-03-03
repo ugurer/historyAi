@@ -1,0 +1,37 @@
+{
+  "name": "turkiye-tarih-sorgulama",
+  "version": "1.0.0",
+  "description": "Türkiye'de Geçmiş Olayları Sorgulama Sistemi",
+  "main": "src/backend/server.js",
+  "scripts": {
+    "start": "node src/backend/server.js",
+    "dev": "nodemon src/backend/server.js",
+    "client": "cd src/frontend && npm start",
+    "dev:full": "concurrently \"npm run dev\" \"npm run client\"",
+    "test": "jest",
+    "setup-db": "node src/database/setup.js"
+  },
+  "keywords": [
+    "tarih",
+    "türkiye",
+    "olaylar",
+    "ai",
+    "sorgulama"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "redis": "^4.6.10",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "openai": "^4.0.0",
+    "axios": "^1.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "concurrently": "^8.2.1",
+    "jest": "^29.6.4"
+  }
+} 
